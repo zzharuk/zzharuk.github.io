@@ -1,0 +1,52 @@
+#mainDiv{
+    margin-top: 100px;
+}
+body{
+    background-color: rgba(26,135,215, 0.7);
+    font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+    cursor: default;
+    -webkit-user-select: none; /* Chrome/Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+ */
+    -o-user-select: none;
+    user-select: none;
+}
+.container{
+    min-width: 650px;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    margin:0;
+
+}
+#tempButton:hover{
+    opacity: 0.6;
+    cursor: pointer;
+}
+#currentTime{
+    margin-top: 50px;
+    font-weight: 400;
+    font-size: 30px;
+}
+#main_ph {
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 30px;
+    height: 280px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+#more {
+    background-color: #FFFFFF;
+    color: #000000;
+    padding: 30px;
+    height: 280px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+#currentLoc, #currentDate{
+    font-size: 24px;
+    font-weight: 700;
+
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://use.fontawesome.com/a208fb4a21.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <title>Pomodoro Clock</title>
+</head>
+<body>
+<div class="container">
+    <div class="centerFlex">
+            <div class="text-center cntrl" id="breakLength">
+                <span class="unselectable btn">-</span>
+                <span>Break</span>
+                <span class="unselectable btn">+</span>
+                <div>5</div>
+            </div>
+            <div class="text-center cntrl" id="sessionLength">
+                <span class="unselectable btn" >-</span>
+                <span>Session</span>
+                <span class="unselectable btn" >+</span>
+                <div>25</div>
+            </div>
+    </div>
+            <div id="load-bar-frame">
+                <div id="load-bar">
+                    <div id="status"></div>
+                    <div id="time"  class="cont"></div>
+                    <div id="icon_cntrl"></div>
+                </div>
+            </div>
+    <div class="text-center">
+        <div class="btn" id="reset">Reset</div>
+    </div>
+
+</div>
+
+</body>
+
+</html>

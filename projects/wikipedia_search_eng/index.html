@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="wikiSearchJS.js"></script>
+    <link rel="stylesheet" href="wikiSearchStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <title>Wiki Search</title>
+
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Wikipedia Search</h1>
+        <div class="row">
+            <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3" id="search">
+                <div class="input-group">
+                    <input id="search-box" type="text" class="form-control" placeholder="Search Wikipedia articles" name="query" value="">
+                    <div class="input-group-btn" style="padding-bottom: 20px">
+                        <button id="search-btn" type="submit" class="btn">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        <button id="random-btn" class="btn">
+                            <i class="fa fa-random"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2" id="main"></div>
+        </div>
+    </div>
+</body>
+</html>

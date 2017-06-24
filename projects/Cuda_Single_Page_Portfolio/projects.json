@@ -1,0 +1,93 @@
+{"result":[
+	{
+		"title":"100xp",
+		"screenshot-path":"./images/projects/100xp.jpg",
+		"url":"#",
+		"tags":["web"],
+		"comment":"Aute proident ut deserunt incididunt tempor enim fugiat magna."
+	},
+	{
+		"title":"artofwhere",
+		"screenshot-path":"./images/projects/artofwhere.jpg",
+		"url":"#",
+		"tags":["web"],
+		"comment":"Eiusmod id qui enim nostrud cillum commodo ut."
+	},
+	{
+		"title":"dlsuhackercup",
+		"screenshot-path":"./images/projects/dlsuhackercup.jpg",
+		"url":"#",
+		"tags":["web"],
+		"comment":"Sunt duis duis irure officia Lorem voluptate pariatur aute sit deserunt ex fugiat."
+	},
+	{
+		"title":"jumpr",
+		"screenshot-path":"./images/projects/jumpr.jpg",
+		"url":"#",
+		"tags":["web","apps"],
+		"comment":"Et aliquip eu deserunt ex consectetur dolore duis nisi aliquip adipisicing non magna esse nostrud.Aliquip nostrud aliqua veniam ut ex ex consequat labore aute laboris voluptate officia non magna eiusmod."
+	},
+	{
+		"title":"kioskbrowser",
+		"screenshot-path":"./images/projects/kioskbrowser.png",
+		"url":"#",
+		"tags":["web","apps"],
+		"comment":"Laborum sit nulla cillum culpa Lorem labore sit irure tempor cillum occaecat aliquip eiusmod mollit."
+	},
+	{
+		"title":"makoframework",
+		"screenshot-path":"./images/projects/makoframework.png",
+		"url":"#",
+		"tags":["web"],
+		"comment":"Enim cupidatat mollit officia excepteur voluptate duis fugiat aliqua do sunt elit reprehenderit est deserunt."
+	},
+	{
+		"title":"phandroid",
+		"screenshot-path":"./images/projects/phandroid.jpg",
+		"url":"#",
+		"tags":["web"],
+		"comment":"Eiusmod ipsum nulla sint est occaecat sit velit et est."
+	},
+	{
+		"title":"roboterwelt",
+		"screenshot-path":"./images/projects/roboterwelt.png",
+		"url":"#",
+		"tags":["web"],
+		"comment":"Tempor in mollit fugiat velit non quis do duis qui voluptate cillum irure officia."
+	},
+	{
+		"title":"visitsarasota",
+		"screenshot-path":"./images/projects/visitsarasota.jpg",
+		"url":"#",
+		"tags":["web","app"],
+		"comment":"Id sit ut amet amet aute magna enim ea dolore incididunt deserunt esse fugiat ea."
+	},
+	{
+		"title":"icons_demo_1",
+		"screenshot-path":"./images/projects/icons_demo_1.png",
+		"url":"#",
+		"tags":["icons"],
+		"comment":"Aliqua aute ad enim in incididunt consequat minim culpa quis ad eiusmod do."
+	},
+	{
+		"title":"icons_demo_2",
+		"screenshot-path":"./images/projects/icons_demo_2.png",
+		"url":"#",
+		"tags":["icons"],
+		"comment":"Aliquip esse amet do magna proident veniam commodo cillum ad do incididunt incididunt dolor."
+	},
+	{
+		"title":"icons_demo_3",
+		"screenshot-path":"./images/projects/icons_demo_3.jpg",
+		"url":"#",
+		"tags":["icons"],
+		"comment":"Id reprehenderit adipisicing nulla aliqua voluptate ullamco ea Lorem ut pariatur."
+	},
+	{
+		"title":"icons_demo_4",
+		"screenshot-path":"./images/projects/icons_demo_4.jpg",
+		"url":"#",
+		"tags":["icons"],
+		"comment":"Ullamco irure consequat aute sit id duis eiusmod pariatur commodo magna voluptate occaecat."
+	}
+]}

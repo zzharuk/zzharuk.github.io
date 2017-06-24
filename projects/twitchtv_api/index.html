@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Twitch TV (JSON API)</title>
+        <link href='https://fonts.googleapis.com/css?family=Black+Ops+One' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style/style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.js"></script>
+        <script src="script/script.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="text-center">Twitch TV API</h1>
+            <div class="row">
+                <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3" id="search">
+                    <ul class="nav nav-tabs">
+                        <li class="active" data-category="users"><a href="#"><i class="fa fa-user fa-2x" aria-hidden="true"></i></a></li>
+                        <li data-category="games"><a href="#"><i class="fa fa-gamepad fa-2x" aria-hidden="true"></i></a></li>
+                        <li data-category="streams" style="display: none"><a href="#"><i class="fa fa-video-camera fa-2x" aria-hidden="true"></i></a></li>
+                    </ul>
+                    <div class="form-group">
+                        <div class="inner-addon right-addon">
+                            <i class="fa fa-search"></i>
+                            <input id="search-box" type="text" class="form-control" placeholder="Search by user" value="">
+                        </div>
+                    </div>
+                    <div id="sort" class="btn-group">
+                        <button type="button" class="btn btn-default btn-md user_sort" data-toggle="tooltip" data-placement="bottom" title="online"><i class="fa fa-check fa-0.5x"></i></button>
+                        <button type="button" class="btn btn-default btn-md user_sort" data-toggle="tooltip" data-placement="bottom" title="offline"><i class="fa fa-times-circle fa-0.5x"></i></button>
+                        <button type="button" class="btn btn-default btn-md user_sort" data-toggle="tooltip" data-placement="bottom" title="not_found"><i class="fa fa-ban fa-0.5x"></i></button>
+                        <button type="button" class="btn btn-default btn-md user_sort" data-toggle="tooltip" data-placement="bottom" title="all"><i class="fa fa-align-justify fa-0.5x"></i></button>
+                        <button id="info" type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#infoModal"><i class="fa fa-info fa-0.5x" aria-hidden="true"></i></button>
+                    </div>
+                    <div id="infoModal" class="modal fade" role="dialog">
+                        <div class="modal-dialog">
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title">Produced by <a href="https://zzharuk.github.io/">@zzharuk</a></h4>
+                                </div>
+                                <div class="modal-body">
+                                    <p>This project based on <a href="https://www.freecodecamp.com/challenges/use-the-twitchtv-json-api" target="_blank">FreeCodeCamp's</a> challenge.</p>
+                                    <p>Used:</p>
+                                    <ul>
+                                        <li>Twitch TV Api <a href="http://dev.twitch.tv/"><i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+                                        <li>Bootstrap 3 <a href="http://getbootstrap.com/"><i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+                                        <li>Jquery <a href="https://jquery.com/"><i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+                                        <li>Font Awesome <a href="http://fontawesome.io/"><i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+                                        <li><a href="http://maxigamer.deviantart.com/art/Twitchy-TV-FONT-594450410">Twitchy.TV FONT</a>
+                                            by <a href="http://maxigamer.deviantart.com/">MaxiGamer</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+                    <div id="content_box">
+                        <div id="users" class="field" style="display: none">
+                            <div class="h3"></div>
+                            <div class="inner_content text-center"></div>
+                        </div>
+                        <div id="games" class="field" style="display: none">
+                            <div class="h3"></div>
+                            <div class="inner_content text-center"></div>
+
+                        </div>
+                        <div id="streams"  class="field" style="display: none">
+                            <div class="row">
+                                <div id="player" style="display: none">
+                                    <div id="live" class="embed-responsive embed-responsive-16by9">
+                                        <iframe class="embed-responsive-item" frameborder="0" scrolling="no" src="" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="h3"></div>
+                            <div class="inner_content text-center"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

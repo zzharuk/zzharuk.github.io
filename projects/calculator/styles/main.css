@@ -1,0 +1,42 @@
+body{
+    font-family: 'Orbitron', sans-serif;
+}
+#input{
+    background-color: #00ccff;
+    font-size: 36px;
+    margin: 50px 0 0 0;
+    padding: 0 10px 0 0;
+    border: none;
+    height: 80px;
+}
+.btnclass{
+    font-size: 20px;
+    border-radius: 0;!important;
+    height: 60px;
+}
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+.digbtn{
+    background-color: #F2F2F2;
+}
+.opbtn, .funcbtn, #about div{
+    background-color: #f1f1ff;
+}
+.row-centered {
+    text-align:center;
+
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+      /* inline-block space fix */
+    margin-right:-3px;
+    margin-bottom: 0;
+}
+.btn-group{
+    margin-right: -10px;
+}
+
+

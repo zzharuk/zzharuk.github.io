@@ -1,0 +1,14 @@
+.selected:hover {
+    -moz-box-shadow: 0 0 10px #ccc;
+    -webkit-box-shadow: 0 0 10px #ccc;
+    box-shadow: 0 0 10px #ccc;
+    border-left: 2px solid #1A87D7;
+}
+a:hover {
+    text-decoration: none;
+}
+.centered {
+    display:inline-block;
+    float:none;
+    margin:0;
+}

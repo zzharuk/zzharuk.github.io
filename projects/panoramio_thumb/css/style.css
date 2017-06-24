@@ -1,0 +1,20 @@
+.hide-bullets {
+    list-style:none;
+    margin-left: -40px;
+    margin-top:20px;
+}
+
+.thumbnail {
+    padding: 0;
+    cursor: pointer;
+}
+#slider-thumbs{
+    height: 600px;
+    overflow-y: auto;
+}
+.carousel-inner>.item>img, .carousel-inner>.item>a>img {
+    width: 100%;
+}
+#search_field{
+    margin-top: 30%;
+}

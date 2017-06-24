@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!-- <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet"> -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+	<link rel="stylesheet" href="./sources/percircle/percircle.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="./sources/materialize/css/materialize.min.css">
+	<link rel="stylesheet" href="./css/main.css">
+	<title>Cuda Single Page Portfolio</title>
+</head>
+
+<body>
+
+        <!-- Page Content goes here -->
+
+	<!-- Nav -->
+	<div class="purple accent-3">
+			<div class="container">
+
+					<nav class="nav-extended purple accent-3">
+						<div class="nav-wrapper">
+							<em><strong><a href="#!" class="brand-logo">SuperWEB</a></strong></em>
+							<a href="#" data-activates="mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+							<ul class="right hide-on-med-and-down">
+								<li><a href="#home">Home</a></li>
+								<li><a href="#service">About</a></li>
+								<li><a href="#portfolio">Work</a></li>
+								<li><a href="#recalls">Blog</a></li>
+								<li><a href="#contacts">Contact</a></li>
+							</ul>
+							<ul class="side-nav" id="mobile">
+								<li><a href="#home">Home</a></li>
+								<li><a href="#service">About</a></li>
+								<li><a href="#portfolio">Work</a></li>
+								<li><a href="#recalls">Blog</a></li>
+								<li><a href="#contacts">Contact</a></li>
+							</ul>
+						</div>
+					</nav>
+
+			</div>
+
+	</div>
+	<!-- Nav end -->
+
+	<!-- Home -->
+
+	<div id="home" class="purple accent-3 center content-wrapper section scrollspy">
+		<div class="container">
+			<div class="row">
+				<h4 class="center">Hi there! We are the new kids on the block<br> and we build awesome websites and mobile apps.</h4>
+				<div class="center">
+					<a class="waves-effect waves-light orange darken-3 btn" href="#modal1">WORK WITH US!</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Home end-->
+
+	<!-- Modal -->
+	<div id="modal1" class="modal white-text purple accent-3">
+		<div class="modal-content">
+			<div class="row">
+				<div class="col s12">
+					<h5>Phone:</h5>
+					<a class="white-text" href="tel:(202) 456-1111" target="_top">(202) 456-1111</a>
+					<h5>Email:</h5>
+					<a class="white-text" href="mailto:superweb@example.com?Subject=Hello%20again" target="_top">superweb@example.com</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="input-field col s12 m6 l6">
+					<h6 class="header">Send massage</h4>
+				</div>
+			</div>
+			<form>
+				<div class="row">
+					<div class="input-field col s12 m6 l6">
+						<input id="first_name" type="text" class="validate">
+						<label for="first_name">First Name <span>*</span></label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="input-field col s12 m6 l6">
+						<input id="email" type="email" class="validate">
+						<label for="email">Email <span>*</span></label>
+					</div>
+				</div>
+			</form>
+			<div class="row">
+		    	<form>
+		    		<div class="input-field col s12 m6 l6">
+		    			<textarea id="textarea1" class="materialize-textarea" data-length="180"></textarea>
+		    			<label for="textarea1">Your Message <span>*</span></label>
+		   			</div>
+		   		</form>
+	  		</div>
+			<div class="row">
+				<div class="col s12">
+					<button id="submit-modal" class="btn waves-effect waves-light blue darken-1" type="submit" name="action">SEND MESSAGE
+	    				<i class="material-icons right">send</i>
+	  				</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Modal -->
+
+	<!-- Service -->
+	<div id="service" class="teal accent-3 center content-wrapper section scrollspy">
+		<div class="container">
+			<h4>SERVICES WE PROVIDE</h4>
+			<hr class="separator"></hr>
+			<p>We are working with both individuals and businesses from all over the globe<br>to create awesome websites and applications.</p>
+			<div class="row">
+				<div class="col s12 m3 l3">
+					<img class="responsive-img" src="images/flag-icon.png" alt="">
+					<h6>BRANDING</h6>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.</p>
+				</div>
+				<hr class="separator show-on-small hide-on-med-and-up"></hr>
+				<div class="col s12 m3 l3">
+					<img class="responsive-img" src="images/crayon-icon.png" alt="">
+					<h6>DESIGN</h6>
+					<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem </p>
+				</div>
+				<hr class="separator show-on-small hide-on-med-and-up"></hr>
+				<div class="col s12 m3 l3">
+					<img class="responsive-img" src="images/gears-icon.png" alt="">
+					<h6>DEVELOPMENT</h6>
+					<p>At vero eos et accusamus et iusto odio dignissimos qui blanditiis praesentium.</p>
+				</div>
+				<hr class="separator show-on-small hide-on-med-and-up"></hr>
+				<div class="col s12 m3 l3">
+					<img class="responsive-img" src="images/rocket-icon.png" alt="">
+					<h6>ROCKET SCIENCE</h6>
+					<p>Et harum quidem rerum est et expedita distinctio. Nam libero tempore.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Service end-->
+
+	<!-- Team -->
+	<div id="team" class="light-blue lighten-4 center content-wrapper section scrollspy">
+		<div class="container">
+			<h4>MEET OUR BEAUTIFUL TEAM</h4>
+			<hr class="separator"></hr>
+			<p>We are a small team of designers and developers, who help brands with big ideas.</p>
+			<div class="row">
+				<div class="col s12 m3 l3">
+					<img class="responsive-img circle" src="./images/team/ceo.jpg" alt="">
+					<h6>ANNE HATHAWAY</h6>
+					<span class="staff-position">CEO / Marketing Guru</span>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.</p>
+					<div class="staff-social-icons">
+						<a href=""><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+						<a href=""><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+						<a href=""><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a>
+					</div>
+				</div>
+				<hr class="separator show-on-small hide-on-med-and-up"></hr>
+				<div class="col s12 m3 l3">
+					<img class="responsive-img circle" src="./images/team/lead-designer.jpg" alt="">
+					<h6>Kate Upton</h6>
+					<span class="staff-position">Lead Designer</span>
+					<p>Duis aute irure dolor in in voluptate velit esse cillum dolore fugiat nulla pariatur. Excepteur sint occaecat non diam proident.</p>
+					<div class="staff-social-icons">
+						<a href=""><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
+						<a href=""><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+						<a href=""><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+						<a href=""><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a>
+					</div>
+				</div>
+				<hr class="separator show-on-small hide-on-med-and-up"></hr>
+				<div class="col s12 m3 l3">
+					<img class="responsive-img circle" src="./images/team/creative-director.jpg" alt="">
+					<h6>Olivia Wilde</h6>
+					<span class="staff-position">Creative Director</span>
+					<p>Nemo enim ipsam voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem nesciunt.</p>
+					<div class="staff-social-icons">
+						<a href=""><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
+						<a href=""><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+						<a href=""><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a>
+					</div>
+				</div>
+				<hr class="separator show-on-small hide-on-med-and-up"></hr>
+				<div class="col s12 m3 l3">
+					<img class="responsive-img circle" src="./images/team/seo.jpg" alt="">
+					<h6>Ashley Greene</h6>
+					<span class="staff-position">SEO / Developer</span>
+					<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+					<div class="staff-social-icons">
+						<a href=""><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
+						<a href=""><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+						<a href=""><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+						<a href=""><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Team end-->
+
+	<!--  Skills-->
+	<div id="skills" class="center content-wrapper section scrollspy">
+		<div class="container">
+			<h4>WE GOT SKILLS!</h4>
+			<hr class="separator"></hr>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod <br>tempor incididunt ut labore et dolore magna aliqua.</p>
+			<div class="row">
+				<div class="col s12 m3 l3">
+					<div class="percent-holder">
+						<div id="bluecircle" data-percent="90" class="animate"></div>
+						<h6>WEB DESIGN</h6>
+					</div>
+				</div>
+				<div class="col s12 m3 l3">
+					<div class="percent-holder">
+						<div id="redcircle" data-percent="75" class="animate"></div>
+						<h6>HTML / CSS</h6>
+					</div>
+				</div>
+				<div class="col s12 m3 l3">
+					<div class="percent-holder">
+						<div id="greencircle" data-percent="70" class="animate"></div>
+						<h6>GRAPHIC DESIGN</h6>
+					</div>
+				</div>
+				<div class="col s12 m3 l3">
+					<div class="percent-holder">
+						<div id="orangecircle" data-percent="85" class="animate"></div>
+						<h6>UI / UX</h6>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--  Skills end-->
+
+	<!-- Portfolio -->
+	<div id="portfolio" class="orange accent-1 center content-wrapper section scrollspy">
+		<div class="container">
+			<h4>OUR PORTFOLIO</h4>
+			<hr class="separator"></hr>
+			<p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet <br>consectetur, adipisci velit, sed quia non numquam</p>
+			<div class="row">
+				<div id="sort-projects">
+					<a id="" class="sort_all waves-effect waves-light btn sort-active orange darken-3">ALL</a>
+					<a id="" class="sort_web waves-effect waves-light btn orange lighten-2">WEB</a>
+					<a id="" class="sort_apps waves-effect waves-light btn orange lighten-2">APPS</a>
+					<a id="sort_icons" class="sort_icons waves-effect waves-light btn orange lighten-2">ICONS</a>
+					<!-- mobile -->
+				</div>
+			</div>
+			<div id="projects-section">
+
+			</div>
+			<div class="row">
+				<div class="col s12">
+					<a class="waves-effect waves-light btn">LOAD MORE PROJECTS</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Portfolio end -->
+
+	<!-- Reccals -->
+	<div id="recalls" class="pink center content-wrapper section scrollspy">
+		<div class="container">
+			<h4>WHAT POEPLE SAY ABOUT US</h4>
+			<hr class="separator"></hr>
+			<p>Our clients love us!</p>
+			<div class="row">
+				<div class="col s12 m6 l6">
+					<div class="card-panel grey lighten-5 z-depth-1">
+						<div class="valign-wrapper">
+							<div class="col s2">
+								<img src="./images/clients/images.jpg" alt="" class="circle responsive-img">
+							</div>
+							<div class="col s10 left-align">
+								<span class="black-text">
+                					This is a square image. Add the "circle" class to it to make it appear circular.
+              					</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col s12 m6 l6">
+					<div class="card-panel grey lighten-5 z-depth-1">
+						<div class="valign-wrapper">
+							<div class="col s2">
+								<img src="./images/clients/images (1).jpg" alt="" class="circle responsive-img">
+							</div>
+							<div class="col s10 left-align">
+								<span class="black-text">
+                					Reprehenderit duis laborum id ea ut aute nostrud reprehenderit officia reprehenderit adipisicing amet dolor quis.
+              					</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col s12 m6 l6">
+					<div class="card-panel grey lighten-5 z-depth-1">
+						<div class="valign-wrapper">
+							<div class="col s2">
+								<img src="./images/clients/images (2).jpg" alt="" class="circle responsive-img">
+							</div>
+							<div class="col s10 left-align">
+								<span class="black-text">
+                					Nostrud sint esse pariatur do aute commodo cupidatat voluptate irure ea aliqua exercitation consectetur.
+              					</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col s12 m6 l6">
+					<div class="card-panel grey lighten-5 z-depth-1">
+						<div class="valign-wrapper">
+							<div class="col s2">
+								<img src="./images/clients/images (3).jpg" alt="" class="circle responsive-img">
+							</div>
+							<div class="col s10 left-align">
+								<span class="black-text">
+                					Consequat laboris nostrud nulla irure irure deserunt veniam sit voluptate enim ullamco consequat irure Lorem deserunt consequat.
+              					</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col s12 m6 l6">
+					<div class="card-panel grey lighten-5 z-depth-1">
+						<div class="valign-wrapper">
+							<div class="col s2">
+								<img src="./images/clients/images (4).jpg" alt="" class="circle responsive-img">
+							</div>
+							<div class="col s10 left-align">
+								<span class="black-text">
+                					Deserunt laborum enim ullamco occaecat cillum exercitation nisi voluptate cupidatat magna exercitation cupidatat id et.
+              					</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col s12 m6 l6">
+					<div class="card-panel grey lighten-5 z-depth-1">
+						<div class="valign-wrapper">
+							<div class="col s2">
+								<img src="./images/clients/images (5).jpg" alt="" class="circle responsive-img">
+							</div>
+							<div class="col s10 left-align">
+								<span class="black-text">
+                					Eiusmod commodo in est aliqua enim eu tempor cillum.
+              					</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Reccals end-->
+
+	<!-- Contacts -->
+	<div id="contacts" class="deep-purple accent-2 center content-wrapper section scrollspy">
+		<div class="container">
+			<h4>GET IN TOUCH</h4>
+			<hr class="separator"></hr>
+			<p>1600 Pennsylvania Ave NW, Washington, DC 20500, United States of America. Tel: (202) 456-1111</p>
+
+			<div class="row">
+    			<form>
+					<div class="col s6">
+						<div class="input-field">
+							<input id="first_name" type="text" class="validate">
+							<label for="first_name">First Name <span>*</span></label>
+						</div>
+					</div>
+					<div class="col s6">
+						<div class="input-field">
+							<input id="email" type="email" class="validate">
+							<label for="email">Email <span>*</span></label>
+						</div>
+					</div>
+					<div class="col s12">
+						<div class="input-field">
+	      					<textarea id="textarea1" class="materialize-textarea" data-length="180"></textarea>
+	      					<label for="textarea1">Your Message <span>*</span></label>
+	    				</div>
+					</div>
+    			</form>
+				<button id="submit-footer" class="btn waves-effect waves-light blue darken-1" type="submit" name="action">SEND MESSAGE
+					<i class="material-icons right">send</i>
+				</button>
+  			</div>
+		</div>
+	</div>
+	<!-- Contacts end -->
+
+	<!-- Footer -->
+	<footer class="page-footer deep-purple accent-3">
+        <div class="container">
+        	<div class="row">
+            	<div class="col s12">
+					<ul id="horizontal-style">
+					  	<li><a class="white-text text-lighten-3" href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+					  	<li><a class="white-text text-lighten-3" href="https://twitter.com/" target="_blank">Twitter</a></li>
+					  	<li><a class="white-text text-lighten-3" href="https://plus.google.com" target="_blank">Google+</a></li>
+					  	<li><a class="white-text text-lighten-3" href="https://www.linkedin.com/" target="_blank">LinkedIn</a></li>
+					</ul>
+				</div
+				<div class="col s12">
+					<ul id="horizontal-style">
+					  	<li><a class="white-text text-lighten-3" href="https://www.behance.net/" target="_blank">Behance</a></li>
+					  	<li><a class="white-text text-lighten-3" href="https://dribbble.com/" target="_blank">Dribbble</a></li>
+					  	<li><a class="white-text text-lighten-3" href="https://github.com/" target="_blank">GitHub</a></li>
+				  	</ul>
+              	</div>
+        	</div>
+    	</div>
+		<div class="footer-copyright">
+		  <div class="container">
+		  © 2017 produced by <a href="https://zzharuk.github.io/">@zzharuk</a>
+		  <a class="grey-text text-lighten-4 right" href="https://www.codexcoder.com/products/cuda-one-page-html-template/">PSD designed by CodexCoder</a>
+		  </div>
+		</div>
+    </footer>
+	<!-- Footer end-->
+
+	<!--scripts-->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="./sources/materialize/js/materialize.min.js"></script>
+	<script type="text/javascript" src="./sources/percircle/percircle.js"></script>
+	<script type="text/javascript" src="./js/common.js"></script>
+</body>
+
+</html>

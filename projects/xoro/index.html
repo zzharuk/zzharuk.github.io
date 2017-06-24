@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="script/script.js"></script>
+    <title>Tic Tac Game</title>
+</head>
+<body>
+<div class="container">
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content text-center">
+                <div class="modal-header">
+                    <h4 class="modal-title">TicTac Game</h4>
+                </div>
+                <div class="modal-body">
+                    <div id="statistic">
+                        <div class="h5" id="game_end_text"></div>
+                        <hr class="hr">
+                        <div class="head">Statistic</div>
+                        <div id="pl_win">Player win: <span></span></div>
+                        <div id="ui_win">Computer win: <span></span></div>
+                        <div id="total">Total games: <span></span></div>
+                    </div>
+                    <hr>
+                    <div id="setting">
+                        <div class="head">Setting</div>
+                        <div id="move_setup" class="head2 text-left">First move: <span>Computer</span></div>
+                        <div id="timer_setup" class="head2 text-left">Timer: <span>off</span></div>
+                    </div>
+                    <hr>
+                    <div id="but">
+                        <span class="btn btn-default">X</span>
+                        <span class="text-center">or</span>
+                        <span class="btn btn-default">O</span>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="">created by <a href="https://zzharuk.github.io/">@zzharuk</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" id="field">
+        <div id="timer" class="col-xs-12 text-right"></div>
+    </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,114 @@
+{
+    "Vue JS Pomodoro":{
+        "name":"Vue.js - Pomodoro",
+        "folder_name":"vuejs-pomodoro",
+        "image_link":"./img/screen_vuejs-pomodoro.png",
+        "url": "./projects/vuejs-pomodoro/index.html",
+        "create_date":""
+    },
+    "Cuda Single Page Portfolio":{
+        "name":"Cuda Single Page Portfolio",
+        "folder_name":"Cuda_Single_Page_Portfolio",
+        "image_link":"./img/screen_cuda.png",
+        "url": "./projects/Cuda_Single_Page_Portfolio/index.html",
+        "create_date":""
+    },
+  "tajem_Landing":{
+      "name":"Tajem agency",
+      "folder_name":"tajem_Landing",
+      "image_link":"./img/screen_tajem.png",
+      "url": "./projects/tajem_Landing/index.html",
+      "create_date":""
+  },
+    "todo_list_simple":{
+        "name":"Todo list",
+        "folder_name":"todo_list_simple",
+        "image_link":"./img/screen_todo_list_simple.png",
+        "url": "./projects/todo_list_simple/index.html"
+  },
+  "xoro":{
+    "name":"X or O",
+    "folder_name":"xoro",
+    "image_link":"./img/screen_xoro.png",
+    "url": "./projects/xoro/index.html"
+  },
+  "pomodoro":{
+    "name":"Pomodoro Clock",
+    "folder_name":"pomodoroClock",
+    "image_link":"./img/screen_pomodoro.png",
+    "url": "./projects/pomodoroClock/index.html"
+  },
+  "wikipedia":{
+      "name":"Wikipedia live search",
+      "folder_name":"wikipedia_search_eng",
+      "image_link":"./img/screen_wikipedia.png",
+      "url": "./projects/wikipedia_search_eng/index.html"
+  },
+  "weather_widget_2":{
+      "name":"Weather App v 2.0",
+      "folder_name":"weather_app",
+      "image_link":"./img/screen_weather2.png",
+      "url": "./projects/weather_app/index.html"
+  },
+  "twitch":{
+      "name":"Twitch TV API",
+      "folder_name":"twitchtv_api",
+      "image_link":"./img/screen_twitch.png",
+      "url": "./projects/twitchtv_api/index.html"
+  },
+  "simon":{
+      "name":"Simon game",
+      "folder_name":"simon_game",
+      "image_link":"./img/screen_simon.png",
+      "url": "./projects/simon_game/index.html"
+  },
+  "quotes":{
+      "name":"Random quotes machine",
+      "folder_name":"random_quotes_machine",
+      "image_link":"./img/screen_quotes.png",
+      "url": "./projects/random_quotes_machine/index.html"
+  },
+  "pomodoro_simple":{
+    "name":"Simple Pomodoro",
+    "folder_name":"pomodoroClock_simple",
+    "image_link":"./img/screen_pomodoro_simple.png",
+    "url": "./projects/pomodoroClock_simple/index.html"
+  },
+  "pokedex":{
+      "name":"Pokedex",
+      "folder_name":"pokedex",
+      "image_link":"./img/screen_pokedex.png",
+      "url": "./projects/pokedex/index.html"
+  },
+  "calculator":{
+      "name":"Calculator",
+      "folder_name":"calculator",
+      "image_link":"./img/screen_calculator.png",
+      "url": "./projects/calculator/index.html"
+  },
+  "weather":{
+      "name":"Local weather widget",
+      "folder_name":"local_weather_widget",
+      "image_link":"./img/screen_weather.png",
+      "url": "./projects/local_weather_widget/index.html"
+  },
+  "gstreets":{
+      "name":"Ajax (based on 'Udacity' course)",
+      "folder_name":"google_streets_ajax",
+      "image_link":"./img/screen_ajax_proj.png",
+      "url": "./projects/google_streets_ajax/index.html"
+  },
+  "panoramio":{
+      "name":"Panoramio gallery",
+      "folder_name":"panoramio_thumb",
+      "image_link":"./img/screen_panoramio.png",
+      "url": "./projects/panoramio_thumb/index.html"
+  },
+  "sortable_table":{
+      "name":"Sortable table",
+      "folder_name":"sortable_table",
+      "image_link":"./img/screen_table.png",
+      "url": "./projects/sortable_table/index.html",
+      "create_date":""
+  }
+}

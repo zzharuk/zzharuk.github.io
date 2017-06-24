@@ -1,0 +1,92 @@
+html, body, .block {
+    height: 100%;
+	font-family: "Roboto";
+  }
+
+h4{
+	font-weight: bold;
+	font-size: 30px;
+}
+.nav-extended{
+	box-shadow: none !important;
+}
+.nav-content h4{
+	padding: 0 0 50px;
+}
+.content-wrapper{
+	padding: 80px 0;
+}
+#home, #service, #recalls, #contacts {
+	color:#fff;
+}
+.separator{
+	width: 50px;
+	border:none;
+	border-bottom: 3px solid rgba(0,0,0,0.15);
+}
+#service img{
+	max-height: 100px;
+}
+#service p{
+	font-size: 14px;
+}
+#service .row, #team .row, #skills .row, #portfolio .row{
+	padding-top: 60px;
+}
+#team{
+	color: #000;
+}
+#team .col{
+    padding: 20px 0;
+}
+#team h6, #skills h6, #service h6, #projects-section h6, #contacts h6{
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.proj-holder{
+	z-index: 2;
+}
+.proj-image{
+
+}
+
+.staff-img-holder{
+	height:150px;
+	width: 150px;
+	background: #878787;
+	border-radius: 50%;
+	margin: 30px auto;
+}
+.staff-position{
+	color:#30bae7;
+	font-size: 14px;
+}
+.staff-social-icons a{
+	margin: auto 6px;
+}
+.percent-holder{
+	height: 120px;
+    width: 120px;
+	margin: 30px auto;
+}
+.percircle > span{
+	line-height: 1 !important;
+}
+label {
+	color: #ffffff !important;
+	margin: auto 20px;
+}
+label > span{
+	color: red;
+}
+#horizontal-style {
+	width: 100%;
+  display: table;
+  table-layout: fixed;
+}
+#horizontal-style li {
+	display: table-cell;
+  width: auto;
+  text-align: center;
+}

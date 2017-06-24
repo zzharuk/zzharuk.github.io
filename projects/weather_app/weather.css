@@ -1,0 +1,300 @@
+* {
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    border-radius: 0 !important;
+}
+body{
+    background-color: rgba(26,135,215, 0.7);
+    min-width: 286px;
+    cursor: default;
+    -webkit-user-select: none; /* Chrome/Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+ */
+    -o-user-select: none;
+    user-select: none;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+#app{
+    margin: 0;
+}
+#header > .col-xs-12{
+    padding: 0!important;
+}
+hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.icon-bar {
+    width: 100%;
+    text-align: center;
+    background-color: #283593;
+    overflow: auto;
+}
+.icon-bar i{
+    z-index: -10;
+}
+.icon-bar a {
+    width: 20%;
+    padding: 12px 0;
+    float: left;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 30px;
+}
+
+.icon-bar a:hover {
+    background-color: #000;
+}
+
+.active {
+    background-color: rgb(44, 40, 255);
+}
+
+/**/
+#icons_info{
+    background-color: rgba(255, 255, 255, .3);
+    border-bottom: 1px solid #1A87D7;
+    color: #FFFFFF;
+    font-family: 'PT Sans Caption', sans-serif;
+    font-size: 10px;
+}
+.active_icon{
+    color: #1A87D7
+}
+.icons:hover, #info_btn:hover, #city_list_select:hover > i{
+    padding: 0;
+}
+.icons:hover, #info_btn:hover, #city_list_select:hover /*.selectedIcon > i*/{
+    border-bottom: 4px solid #1A87D7;
+}
+
+#searchclear {
+    position: absolute;
+    font-size: 26px;
+    right: 50px;
+    cursor: pointer;
+    color: #212121;
+    z-index: 10;
+}
+
+#data{
+    font-family: 'PT Sans Caption', sans-serif;
+    background: rgba(0, 0, 0, .3);
+    color: #FFFFFF;
+    float: right;
+    padding-left: 8px;
+    height: 80px;
+    width: 100px;
+}
+#tempButton:hover{
+    opacity: 0.6;
+    cursor: pointer;
+}
+.col-wrap{
+    overflow: hidden;
+}
+.primary-text{
+    color:#212121;
+    font-size: 12px;
+}
+
+#main_ph {
+    background: #42789F;
+    color: #FFFFFF;
+/*    margin-bottom: -99999px;
+    padding-bottom: 99999px;*/
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+
+}
+#main_ph ~ .col-md-8{
+    padding: 0 0 99999px 0 !important;
+    background: rgba(255, 255, 255, .3);
+    color: #000000;
+    margin-bottom: -99999px;
+}
+#city_list{
+    background-color: rgba(40, 53, 147, 0.7);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    z-index: 2;
+/*    overflow: hidden;*/
+    display: none;
+}
+#info_btn{
+    float: right;
+}
+#city_location{
+    margin-top: 12px;
+}
+#temp{
+    margin-top: 20px;
+    font-size: 34px;
+}
+#temp div{
+    display: inline;
+}
+.changeable{
+    padding: 12px;
+}
+#more{
+    font-size: 16px;
+}
+#about_app {
+    font-family: 'PT Sans Caption', sans-serif;
+ }
+#weatherIcon{
+    margin: 20px 0;
+}
+#weatherIcon>i{
+    font-size: 5em;
+}
+.citylist{
+    padding: 8px 8px 6px 8px;
+}
+.city{
+    padding: 5px;
+}
+.table{
+    margin: 0 !important;
+}
+#search_apply, #searchinput{
+    border: none !important;
+    height: 34px;
+}
+#search_apply{
+    padding-top: 0px;
+    padding-bottom: 0px;
+    font-size: 26px;
+}
+.city:hover, .citylist:hover{
+    background: rgba(0, 0, 0, .3);
+    color: #FFFFFF;
+    cursor: pointer;
+}
+#city_list_select,.icons,#info_btn{
+    font-size: 2em;
+}
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+    /*#city_list_select,.icons,#info_btn{
+        font-size: 2em;
+    }*/
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    /*#city_list_select,.icons,#info_btn{
+        font-size: 2em;
+    }*/
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+    #city_list_select,.icons,#info_btn{
+        font-size: 1.5em;
+    }
+    #temp{
+        font-size: 2.5em;
+    }
+}
+
+/*
+!* Custom, iPhone Retina *!
+@media only screen and (max-width : 320px) {
+    .col-xs-6{
+        height: auto;
+    }
+    #currentTemp,#tempButton,#currentLoc{
+        font-size: 24px;
+    }
+    #data{
+        visibility: hidden;
+    }
+}
+
+
+!*==========  Mobile First Method  ==========*!
+
+!* Custom, iPhone Retina *!
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3)
+{
+    .col-xs-6{
+        height: 270px;
+    }
+    #currentTemp,#tempButton,#currentLoc{
+        font-size: 24px;
+    }
+    #data{
+        visibility: hidden;
+    }
+}
+@media only screen and (min-width : 320px) {
+    #currentTemp, #tempButton, #currentLoc {
+        font-size: 24px;
+    }
+
+    #data {
+        visibility: hidden;
+    }
+    #forecast{
+        font-size: 8px;
+    }
+}
+
+!* Extra Small Devices, Phones *!
+@media only screen and (min-width : 480px) {
+    .container{
+        max-width: 600px;
+    }
+    #data{
+        visibility: visible;
+    }
+    #forecast{
+        font-size: 12px;
+    }
+}
+
+!* Small Devices, Tablets *!
+@media only screen and (min-width : 768px) {
+
+    #currentTemp,#tempButton,#currentLoc{
+        font-size: 30px;
+    }
+    .container{
+        max-width: 600px;
+    }
+    #data{
+        visibility: visible;
+    }
+}
+
+!* Medium Devices, Desktops *!
+@media only screen and (min-width : 992px) {
+    .container{
+        max-width: 600px;
+    }
+    #data{
+        visibility: visible;
+    }
+}
+
+!* Large Devices, Wide Screens *!
+@media only screen and (min-width : 1200px) {
+    .container{
+        max-width: 600px;
+    }
+    #data{
+        visibility: visible;
+    }
+}*/

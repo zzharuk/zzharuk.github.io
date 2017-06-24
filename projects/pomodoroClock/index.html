@@ -1,0 +1,194 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <!--<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />-->
+    <meta name="theme-color" content="#FCA2A1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.2.0/css/bootstrap-slider.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.2.0/bootstrap-slider.min.js"></script>
+    <script src="script.js"></script>
+    <title>Pomodoro Clock</title>
+</head>
+<body>
+    <!--New task modal-->
+    <div id="task_modal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="task_name" placeholder="Task name" aria-describedby="task_name">
+                        <span class="input-group-addon btn btn-default" >OK</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Settings modal-->
+    <div id="menu" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header ">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <div class="modal-title text-center">
+                        <div class="btn left settings_slide" data-slide="prev">
+                            <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                        </div>
+                        <div id="headerCarousel" class="carousel slide" data-interval="false" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="h4 item active" id="settings_header">Settings</div>
+                                <div class="h4 item" id="info_header">Info</div>
+                                <div class="h4 item" id="statistic_header">Statistic</div>
+                            </div>
+                        </div>
+                        <div class="btn right settings_slide"  data-slide="next">
+                            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="settingscarusel">
+                        <div id="menuCarousel" class="carousel slide" data-interval="false" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="item active" id="settings">
+                                    <div class="h4">Timers</div>
+                                    <div id="timers_settings">
+                                        <div>
+                                            <div class="range_title left">Work</div>
+                                            <div class="range_value right"></div>
+                                            <div>
+                                                <input type="range" data-name="session" />
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="range_title left">Break</div>
+                                            <div class="range_value right"></div>
+                                            <div>
+                                                <input type="range" data-name="break" />
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="range_title left">Long break</div>
+                                            <div class="range_value right"></div>
+                                            <div>
+                                                <input type="range" data-name="long_break" />
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div id="work_tooltip" class="range_title left" data-toggle="tooltip" data-placement="top" title="sessions for long break long break">Work sessions</div>
+                                            <div class="range_value right"></div>
+                                            <div>
+                                                <input type="range" data-name="work_num" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="h4">Other</div>
+                                    <div id="other_settings">
+                                        <div class="left">
+                                            <input type="checkbox" name="checkboxG4" class="css-checkbox" id="sound_set">
+                                            <label for="sound_set" class="css-label">Sound</label>
+                                        </div>
+                                        <div class="right">
+                                            <input type="checkbox" name="checkboxG4" class="css-checkbox" id="vibr_set">
+                                            <label for="vibr_set" class="css-label">Vibration</label>
+                                        </div>
+                                    </div>
+                                    <div class="text-center" id="default_settings">
+                                        <button class="btn btn-primary">default</button>
+                                    </div>
+                                </div>
+                                <div class="item" id="info">
+                                    <p>Pomodoro Technique on <a href="https://en.wikipedia.org/wiki/Pomodoro_Technique" target="_blank">Wikipedia</a></p>
+                                    <p>This project based on <a href="https://www.freecodecamp.com/challenges/build-a-pomodoro-clock" target="_blank">FreeCodeCamp's</a> challenge.</p>
+                                    <p>Used:</p>
+                                    <ul>
+                                        <li>Bootstrap 3 <a href="http://getbootstrap.com/" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+                                        <li>Jquery <a href="https://jquery.com/" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+                                        <li>Font Awesome <a href="http://fontawesome.io/" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+                                        <li>Css checkbox style <a href="http://www.csscheckbox.com/checkboxes/0/" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+                                        <li>Bootstrap-slider by <b>seiyria </b><a href="https://github.com/seiyria/bootstrap-slider" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+                                        <li>Sounds effects from freesound.org<a href="https://freesound.org/" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="item" id="statistic">
+                                     <table class="table table-condensed">
+                                            <thead>
+                                                <tr>
+                                                    <th>task</th>
+                                                    <th>date</th>
+                                                    <th>start</th>
+                                                    <th>stop</th>
+                                                    <th class="text-right">pomodoros</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+
+                                            </tbody>
+                                        </table>
+                                    <div class="btn btn-danger btn-sm right" id="clear_history">clear</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="">created by <a href="https://zzharuk.github.io/">@zzharuk</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Pomodoro-->
+    <div class="wrap">
+        <div class="h2 text-center">Pomodoro Timer</div>
+            <div class="info" style="clear: both;">
+                <div id="settings_btn" class="btn left" data-toggle="modal" data-target="#menu"><i class="fa fa-cog" aria-hidden="true"></i></div>
+                <div id="infobar" class="text-center"></div>
+                <div id="statistic_btn" class="btn right" data-toggle="modal" data-target="#menu"><i class="fa fa-bar-chart" aria-hidden="true"></i></div>
+            </div>
+        <div id="length_buttons" style="clear: both;">
+                <div id="break" class="text-center left">
+                    <div>Break</div>
+                    <div class="btn" data-oper="-"><i class="fa fa-minus-circle" aria-hidden="true"></i></div>
+                    <span class="len"></span>
+                    <div class="btn" data-oper="+"><i class="fa fa-plus-circle" aria-hidden="true"></i></div>
+                </div>
+
+                <div id="session" class="text-center right">
+                    <div>Session</div>
+                    <div class="btn" data-oper="-"><i class="fa fa-minus-circle" aria-hidden="true"></i></div>
+                    <span class="len"></span>
+                    <div class="btn" data-oper="+"><i class="fa fa-plus-circle" aria-hidden="true"></i></div>
+                </div>
+        </div>
+        <div class="circle">
+            <div class="circle__inner">
+                <div class="circle__wrapper">
+                    <div class="circle__content">
+                        <div id="text_status" class="text_center"></div>
+                        <div id="time"  class="cont text_center"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="icons_cntrl">
+            <div class="btn right" data-title="stop">
+               <i class="fa fa-stop"></i>
+            </div>
+            <div class="btn" data-title="play">
+               <i class="fa fa-play"></i>
+            </div>
+        </div>
+    </div>
+    <audio class="clockSnd" preload></audio>
+</body>
+
+</html>

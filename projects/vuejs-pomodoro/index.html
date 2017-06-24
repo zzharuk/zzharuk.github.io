@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./css/master.css">
+	<title>Vue.js Pomodoro</title>
+</head>
+
+<body>
+	<div id="app" class="container">
+		<div class="row">
+			<div class="col-xs-12 col-md-offset-4 col-md-4 text-center">
+				<h2>
+					<span>Pomodoro</span>
+				</h2>
+				<div class="well">
+					<h1>{{ title }}</h1>
+					<h1 class="text-success margination">
+						<span>{{ min }}</span>:<span>{{ sec }}</span>
+					</h1>
+					<div class="progress">
+						<div v-bind:class="progressBarClass()" class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" v-bind:style="{ width: percentSet() + '%'}">
+						</div>
+					</div>
+					<div class="margination">
+						<button class="btn btn-lg btn-success" :disabled="state==='started'" @click="start()">
+							<i class="glyphicon glyphicon-play"></i>
+						</button>
+						<button class="btn btn-lg btn-info" :disabled="state!=='started'" @click="pause()">
+							<i class="glyphicon glyphicon-pause"></i>
+						</button>
+						<button class="btn btn-lg btn-danger" :disabled="state!=='started' && state !== 'paused'" @click="stop()">
+							<i class="glyphicon glyphicon-stop"></i>
+						</button>
+					</div>
+				</div>
+			</div>
+			<footer class="footer col-xs-12 col-md-offset-4 col-md-4">
+				<p class="text-center">produced by <a href="https://zzharuk.github.io/" target="_blank">©zzharuk</a> 2017</p>
+				<div class="panel-group">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4 class="panel-title text-center">
+        						<a data-toggle="collapse" href="#collapse1">more</a>
+      						</h4>
+						</div>
+						<div id="collapse1" class="panel-collapse collapse">
+							<div class="list-group">
+								<a href="http://pomodorotechnique.com/" class="list-group-item list-group-item-action" target="_blank">pomodoro technique</a>
+								<a href="https://github.com/PacktPublishing/Learning-Vuejs-2" class="list-group-item list-group-item-action" target="_blank">original example from book Filipova O. - Learning Vue.js 2.0</a>
+								<a href="https://vuejs.org/" class="list-group-item list-group-item-action" target="_blank">vue.js</a>
+								<a href="http://getbootstrap.com/" class="list-group-item list-group-item-action" target="_blank">bootstrap</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</div>
+
+	<!-- scripts -->
+	<script src="https://unpkg.com/vue" charset="utf-8"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" charset="utf-8"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" charset="utf-8"></script>
+	<script src="./js/main.js" charset="utf-8"></script>
+</body>
+
+</html>

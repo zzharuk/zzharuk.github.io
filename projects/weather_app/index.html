@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#283593">
+        <title>Current weather</title>
+        <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">-->
+        <link rel="stylesheet" href="../source/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons-wind.css">
+        <link href='https://fonts.googleapis.com/css?family=PT+Sans+Caption' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="weather.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="js/script.js"></script>
+        <script src="js/clock.js"></script>
+        <script src="js/history.js"></script>
+    </head>
+    <body>
+    <div class="container">
+        <div id="app">
+            <div class="row">
+                <div class="col-xs-12 col-sm-offset-3 col-sm-6 col-md-offset-3 col-md-6 col-lg-offset-3 col-lg-6">
+                    <div class="row" id="header">
+                        <div class="col-xs-12">
+                            <div class="icon-bar">
+                                <a data-desc="cities list" data-link="city_list" href="#"><i class="fa fa-list"></i></a>
+                                <a class="active" href="#" data-desc="now" data-link="more" ><i class="fa fa-thumb-tack"></i></a>
+                                <a href="#" data-desc="forecast" data-link="forecast" ><i class="fa fa-map"></i></a>
+                                <a href="#" data-desc="search city" data-link="search_field" ><i class="fa fa-search"></i></a>
+                                <a href="#" data-desc="info" data-link="about_app" ><i class="fa fa-info-circle"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 " id="icons_info">local weather</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-wrap">
+                            <div class="col-xs-12 col-md-4 text-center" id="main_ph">
+                                <div class="col-xs-12 col-md-4 text-left" id="city_list"></div>
+                                <div class="col-xs-12">
+                                    <div class="loader" style="display: none">
+                                        <i  style="vertical-align: middle;" class="fa fa-spinner fa-pulse fa-4x fa-fw"></i>
+                                        <span class="sr-only">Loading...</span>
+                                    </div>
+                                    <div id="city_location"></div>
+                                    <div id="temp">
+                                        <div id="currentTemp"></div>
+                                        <div id="tempButton" title="change units"></div>
+                                    </div>
+                                    <div id="description"></div>
+                                    <div id="weatherIcon"></div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-md-8">
+                                <div class="col-xs-12 changeable primary-text" id="more">
+                                    <div id="data">
+                                        <div id="currentDate"></div>
+                                        <div id="currentTime"></div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 changeable primary-text" id="forecast" style="display: none">
+                                    <div class="loader" style="display: none">
+                                        <i  style="vertical-align: middle;" class="fa fa-spinner fa-pulse fa-4x fa-fw"></i>
+                                        <span class="sr-only">Loading...</span>
+                                    </div>
+                                    <table class="table table-condensed">
+                                        <tbody></tbody>
+                                    </table>
+                                </div>
+                                <div class="col-xs-12 changeable" id="search_field" style="display: none">
+                                    <div id="search">
+                                        <form class="form-horizontal">
+                                            <div class="input-group">
+                                                <input id="searchinput" list="char" type="search" class="form-control" autocomplete="off">
+                                                <!--<span id="searchclear"><i class="fa fa-times-circle-o" aria-hidden="true"></i></span>-->
+                                                <datalist id="char"></datalist>
+                                                <span class="input-group-btn">
+                                                <button id="search_apply" class="btn btn-default" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                            </span>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="col-xs-2" id="input_msg" style="display: none">Latin only</div>
+                                    <div class="loader col-xs-1" style="display: none">
+                                        <i  style="vertical-align: middle;" class="fa fa-spinner fa-pulse fa-2x fa-fw"></i>
+                                        <span class="sr-only">Loading...</span>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 changeable" id="about_app" style="display: none">
+                                    <div>Using:</div>
+                                    <ul>
+                                        <li>weather <a href="http://openweathermap.org/api" target="_blank">OpenWeatherMap API;</a></li>
+                                        <li>coords <a href="http://freegeoip.net/" target="_blank">freegeoip.net API</a></li>
+                                        <li>city auto complete <a href="http://geobytes.com/" target="_blank">geobytes.com</a></li>
+                                        <li><a href="https://erikflowers.github.io/weather-icons/index.html" target="_blank">CSS Weather Icons</a></li>
+                                        <li><a href="https://jquery.com/" target="_blank">JQuery</a></li>
+                                        <li><a href="http://getbootstrap.com/" target="_blank">Bootstrap</a></li>
+                                        <li><a href="http://codepen.io/adamrasheed/pen/MwYNGX" target="_blank">Slide-In Menu with JQuery</a></li>
+                                    </ul>
+                                    <hr>
+                                    <div class="">created by <a href="https://zzharuk.github.io/">@zzharuk</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </body>
+</html>

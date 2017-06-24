@@ -1,0 +1,144 @@
+/*==========  Desktop First Method  ==========*/
+
+
+/* Large Devices, Wide Screens */
+
+@media only screen and (max-width: 1200px) {}
+
+
+/* Medium Devices, Desktops */
+
+@media only screen and (max-width: 992px) {}
+
+
+/* Small Devices, Tablets */
+
+@media only screen and (max-width: 768px) {
+    .footer{
+                height: 576px;
+    }
+    .footer h4{
+        margin-top: 30px;
+        height: auto;
+    }
+    .footer_middle_line{
+        margin: auto;
+    }
+    .expertize_inner .col-sm-6 {
+        border-bottom: 1px solid #ebebeb;
+    }
+    .expertize_inner .col-sm-6:last-child {
+        border: none;
+    }
+}
+
+/* Extra Small Devices, Phones */
+
+@media only screen and (max-width: 480px) {
+    section {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .about_section .img-responsive {
+        width: 100px;
+    }
+    .img_staff {
+        height: 130px;
+    }
+    .staff_holder {
+        height: 200px;
+        margin: 6px auto;
+    }
+	.info_staff h6{
+		font-size: 13px;
+	}
+    .info_staff p, .teams_about_footer p{
+		font-size: 12px;
+	}
+    .projects_holder, .works_section button{
+        margin: 20px auto;
+    }
+    .testimonials{
+        height: auto;
+    }
+    .testimonials h2{
+        font-size: 60px;
+    }
+    .testimonials .carousel-inner p{
+        font-size: 13px;
+
+    }
+    .teams_about_footer {
+        margin: auto;
+    }
+    .form_input {
+        font-size: 12px;
+    }
+    .footer .main_logo{
+
+    }
+    .footer .main_logo span{
+        font-size: 18px;
+    }
+    .footer_middle_line {
+        font-size: 12px;
+        margin-top: 12px;
+    }
+    .footer_middle_line p {
+        line-height: 1.2;
+    }
+    .footer h4 {
+        height: auto;
+        margin: 20px auto;
+    }
+    .terms {
+        margin: 12px auto;
+    }
+    .terms a {
+        font-size: 12px;
+    }
+    .sub_input input {
+        height: 44px;
+        width: 75%;
+    }
+    .social_icons {
+        margin: 12px auto;
+    }
+}
+
+
+/* Custom, iPhone Retina */
+
+@media only screen and (max-width: 320px) {}
+
+
+/*==========  Mobile First Method  ==========*/
+
+
+/* Custom, iPhone Retina */
+
+@media only screen and (min-width: 320px) {}
+
+
+/* Extra Small Devices, Phones */
+
+@media only screen and (min-width: 480px) {
+
+}
+
+
+/* Small Devices, Tablets */
+
+@media only screen and (min-width: 768px) {
+
+}
+
+
+/* Medium Devices, Desktops */
+
+@media only screen and (min-width: 992px) {}
+
+
+/* Large Devices, Wide Screens */
+
+@media only screen and (min-width: 1200px) {}

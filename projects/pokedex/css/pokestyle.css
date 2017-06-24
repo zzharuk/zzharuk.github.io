@@ -1,0 +1,89 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+.img-responsive {
+    margin: 0 auto; /*выравнивание*/
+}
+.pokesinfo{
+    height: 200px;
+    margin: 0 auto;
+    padding: 8px;!important;
+}
+#infobar{
+    overflow-y: auto; /* adds scrollbar */
+    position: fixed;
+    right: 10px;
+    top: 10px;
+}
+.typesDives{
+    color: #FFF;
+    font-family: cursive;
+    display: inline;
+    margin: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 3px;
+    cursor:pointer;
+}
+.pokesinfo:hover {
+    -moz-box-shadow: 0 0 10px #ccc;
+    -webkit-box-shadow: 0 0 10px #ccc;
+    box-shadow: 0 0 10px #ccc;
+    border: 2px solid #1A87D7;
+    cursor:pointer;
+}
+.pokemonsName{
+    font-family: "Calibri Light", Calibri, Helvetica, Arial, sans-serif;
+    font-weight: 900;
+    font-size: medium;
+}
+
+#types .typesDives:hover{
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+}
+h3, h4{
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.affix{
+    top:0;
+}
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+    padding: 4px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
+}
+/****************************/
+
+
+/* Portrait */
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 736px)
+and (orientation: portrait) {
+    #infobar{
+        zoom: 70%;
+    }
+    #logo{
+        width: 50%;
+    }
+}
+
+/* Landscape */
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 736px)
+and (orientation: landscape) {
+    #infobar{
+        zoom: 46%;
+    }
+    #logo{
+        width: 50%;
+    }
+}
