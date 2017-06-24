@@ -1,5 +1,5 @@
 function getQuoteText() {
-    $.getJSON('http://quotes.stormconsultancy.co.uk/random.json', function(data){
+    $.getJSON('//quotes.stormconsultancy.co.uk/random.json', function(data){
         $("#quoteText").html('"' + data.quote + '"');
         $("#quoteAuthor").html("<strong>author:</strong> " + data.author);
     })
