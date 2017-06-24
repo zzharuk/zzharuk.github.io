@@ -15,15 +15,29 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-sm-offset-2 col-sm-8 col-md-offset-3 col-md-6 col-lg-offset-4 col-lg-4 text-center">
-                    <h1>Random quotes machine</h1>
-                    <div class="content">
-                        <div id="quoteText"></div>
-                        <div id="quoteAuthor"></div>
+                    <div class="well content">
+                        <h4>Random quotes machine</h4>
+                        <hr>
+                        <div id="quote-container">
+                            <div class="text-left" id="quoteText"></div>
+                            <div class="text-right" id="quoteAuthor"></div>
+                        </div>
+                        <hr>
+                        <div id="btn-group-justified">
+                            <div id="getQuote" class="btn btn-primary pull-left">get quote</div>
+                            <div id="twit" class="btn btn-primary pull-right">
+                                <i class="fa fa-twitter"></i>
+                                <span style="padding-left: 8px">twit</span>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
                     </div>
-                    <div id="btns">
-                        <div id="getQuote" class="button">get quote</div>
-                        <div id="twit" class="button"><i class="fa fa-twitter"></i><span style="padding-left: 8px">twit</span></div>
-                    </div>
+                    <footer class="well">
+                        <p>Quotes API - 
+                            <a href="http://quotes.stormconsultancy.co.uk/" target="_blank">quotes.stormconsultancy.co.uk</a>
+                        </p>
+        				<p>produced by <a href="https://zzharuk.github.io/" target="_blank">©zzharuk</a></p>
+        			</footer>
             </div>
         </div>
     </div>
