@@ -1,10 +1,8 @@
 function getQuoteText() {
-    $.getJSON("https://crossorigin.me/http://quotes.stormconsultancy.co.uk/random.json?callback=?", function(json) {
-        $("#quoteText").html('"' + json.quote + '"');
-        $("#quoteAuthor").html("<strong>author:</strong> " + json.author);
-    }).fail(function() {
-        $("#quoteText").text("Sorry, now server not available");
-    });
+    $.getJSON('http://quotes.stormconsultancy.co.uk/random.json', function(data){
+        $("#quoteText").html('"' + data.quote + '"');
+        $("#quoteAuthor").html("<strong>author:</strong> " + data.author);
+    })
 }
 $(document).ready(function() {
     getQuoteText();
